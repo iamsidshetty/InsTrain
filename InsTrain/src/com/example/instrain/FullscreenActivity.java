@@ -1,14 +1,15 @@
 package com.example.instrain;
 
-import com.example.instrain.util.SystemUiHider;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.example.instrain.util.SystemUiHider;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -111,7 +112,7 @@ public class FullscreenActivity extends Activity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        findViewById(R.id.btn_start).setOnTouchListener(mDelayHideTouchListener);
     }
 
     @Override
@@ -155,5 +156,11 @@ public class FullscreenActivity extends Activity {
     private void delayedHide(int delayMillis) {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
+    }
+    
+    //to add the functionality of GET ROLLING!! button
+    public void gotoLoginPage(View view){
+    	Intent intent = new Intent(this, LoginPageActivity.class);
+    	startActivity(intent);
     }
 }
