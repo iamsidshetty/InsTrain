@@ -10,10 +10,11 @@
     <string name="Dev">Developed By Ganesh Prasad Nayak</string>
     <string name="start">START</string>
     <string name="Get_Rolling">GET ROLLING!!</string>
-    <string name="Enter_Username">Enter Username</string>
-    <string name="Enter_Password">Enter Password</string>
     <string name="title_activity_login_page">Sign In</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-
+    <string name="Enter_UserName">USERNAME</string>
+	<string name="Enter_Password">PASSWORD</string>
+	<string name="Sign_In">SIGN IN</string>
+	<string name="Sign_Up">SIGN UP</string>
 </resources>
