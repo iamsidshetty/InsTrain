@@ -2,11 +2,13 @@
 <resources>
 
     <string name="app_name">InsTrain</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!--  <string name="dummy_button">Dummy Button</string> 
+    <string name="dummy_content">DUMMY\nCONTENT</string> -->
     <string name="InsTrain">InsTrain</string>
     <string name="Dev">Developed By Ganesh Prasad Nayak</string>
     <string name="start">START</string>
     <string name="Get_Rolling">GET ROLLING!!</string>
+    <string name="Enter_Username">Enter Username</string>
+    <string name="Enter_Password">Enter Password</string>
 
 </resources>
