@@ -1,0 +1,106 @@
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.instrain.LoginPageActivity" >
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal"
+        android:keepScreenOn="true"
+        android:text="@string/InsTrain"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+
+<!--         <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" > -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_gravity="center" 
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="25dp" 
+                tools:ignore="UselessParent" >
+                
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp" >
+                    <EditText 
+                        android:id="@+id/txt_Username"
+				        android:layout_weight="1"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/Enter_UserName" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp" >
+                    <EditText 
+                        android:id="@+id/txt_Pass"
+				        android:layout_weight="1"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:hint="@string/Enter_Password" />
+
+                </TableRow>
+                
+                 <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp" >
+
+                     <Button
+                         android:id="@+id/btn_SignIn"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="@string/Sign_In" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp" >
+
+                    <Button
+                        android:id="@+id/btn_SignUp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Sign_Up" />
+
+                </TableRow>
+            </TableLayout>
+
+        <!-- </LinearLayout> -->
+    </LinearLayout>
+
+</FrameLayout>
