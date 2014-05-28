@@ -3,6 +3,7 @@ package com.example.instrain;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+//import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
